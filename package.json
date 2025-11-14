@@ -17,9 +17,11 @@
     "ScrollView",
     "indicator"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "dist",
-    "src",
     "README.md",
     "CHANGELOG.md"
   ],
