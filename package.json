@@ -1,0 +1,38 @@
+{
+  "name": "react-native-indicator-scrollview",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"尚未配置测试\"",
+    "build": "tsc",
+    "prepare": "npm run build",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "react-native",
+    "ui",
+    "components",
+    "ScrollView",
+    "indicator"
+  ],
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "author": "zhenryx",
+  "license": "ISC",
+  "description": "A customizable horizontal ScrollView with an indicator for React Native.",
+  "devDependencies": {
+    "@types/react": "18.2.0",
+    "@types/react-native": "0.70.0",
+    "typescript": "5.0.4"
+  },
+  "peerDependencies": {
+    "react": ">=17.0.0",
+    "react-native": ">=0.65.0"
+  }
+}
