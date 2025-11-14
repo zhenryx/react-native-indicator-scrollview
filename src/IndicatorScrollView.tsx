@@ -1,17 +1,17 @@
 import React, { useRef, useState, useMemo, useCallback } from 'react';
 import { StyleSheet, View, Animated, ViewStyle, LayoutChangeEvent, StyleProp } from 'react-native';
-interface Props {
-  children: React.ReactNode,
-  trackWidth?: number,//指示器轨道总长度
-  trackHeight?: number,
-  trackColor?: string,
-  thumbWidth?: number,//指示器初始长度
-  thumbColor?: string,
-  showIndicator?: boolean,
-  style?: StyleProp<ViewStyle>,
-  scrollMarginVertical?: number,
+export interface IndicatorScrollViewProps {
+  children: React.ReactNode;
+  trackWidth?: number;//指示器轨道总长度
+  trackHeight?: number;
+  trackColor?: string;
+  thumbWidth?: number;//指示器初始长度
+  thumbColor?: string;
+  showIndicator?: boolean;
+  style?: StyleProp<ViewStyle>;
+  scrollMarginVertical?: number;
 }
-export const IndicatorScrollView: React.FC<Props> = ({
+export const IndicatorScrollView: React.FC<IndicatorScrollViewProps> = ({
   children,
   trackWidth = 20,
   trackHeight = 4,
