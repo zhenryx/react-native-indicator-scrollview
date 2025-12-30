@@ -88,7 +88,7 @@ export function PaginatedIndicatorScrollView({
   const height = scrollX.interpolate({
     inputRange: [0, screenwidth],
     // 第一页的高度为菜单项高度，第二页的高度为菜单项高度加上2然后乘以第二页的菜单项数量，减去1是因为第一页已经占用了1个菜单项
-    outputRange: [menuItemHeight, (menuItemHeight + 2) * (Math.ceil(data.length / firstPageCount-1))],
+    outputRange: [menuItemHeight, menuItemHeight * (Math.ceil(data.length / firstPageCount-1))],
   });
   // 过渡距离为屏幕宽度减去菜单项宽度的一半
   const transitionDistance = screenwidth - (screenwidth / 5.5 / 2);
