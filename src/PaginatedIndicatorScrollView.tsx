@@ -112,6 +112,7 @@ export function PaginatedIndicatorScrollView({
   return (
     <View style={[styles.container, containerStyle]}>
       <ScrollView
+        scrollEnabled={data.length > firstPageCount}
         horizontal
         pagingEnabled
         scrollEventThrottle={16}
@@ -167,7 +168,9 @@ export function PaginatedIndicatorScrollView({
             ]}
           />
         </View>
-        <View style={[styles.track, styles.trackRight, trackStyle, trackRightStyle]}>
+        {
+        data.length > firstPageCount && (
+          <View style={[styles.track, styles.trackRight, trackStyle, trackRightStyle]}>
           <Animated.View
             style={[
               styles.thumb,
@@ -178,6 +181,8 @@ export function PaginatedIndicatorScrollView({
             ]}
           />
         </View>
+        )
+       }
       </View>
     </View>
   );

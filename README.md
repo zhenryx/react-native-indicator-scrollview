@@ -14,6 +14,8 @@ npm install @zhenryx/react-native-indicator-scrollview
 
 基础的横向滚动视图组件，带有滚动指示器。
 
+![IndicatorScrollView](./src/assets/example/IndicatorScrollView.gif)
+
 #### 使用示例
 
 ```tsx
@@ -51,6 +53,8 @@ export default function Demo() {
 ### PaginatedIndicatorScrollView
 
 分页式横向滚动视图组件，支持第一页固定显示，第二页展开显示更多内容，带有双指示器。
+
+![PaginatedIndicatorScrollView](./src/assets/example/PaginatedIndicatorScrollView.gif)
 
 #### 使用示例
 
