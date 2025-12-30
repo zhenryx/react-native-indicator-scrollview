@@ -22,8 +22,7 @@
   "files": [
     "dist",
     "README.md",
-    "CHANGELOG.md",
-    "src/assets/example/*.gif"
+    "CHANGELOG.md"
   ],
   "author": "zhenryx",
   "license": "ISC",
