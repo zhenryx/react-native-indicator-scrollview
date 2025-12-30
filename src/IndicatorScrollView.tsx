@@ -83,6 +83,7 @@ export const IndicatorScrollView: React.FC<IndicatorScrollViewProps> = ({
     </View>
   )
 }
+IndicatorScrollView.displayName = 'IndicatorScrollView';
 const styles = StyleSheet.create({
   container: {
     flexGrow: 0,
