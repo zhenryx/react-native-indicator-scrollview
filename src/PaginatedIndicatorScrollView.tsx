@@ -108,7 +108,8 @@ export function PaginatedIndicatorScrollView({
 
   const firstPageWidth = screenwidth - (screenwidth / 5.5 / 2);
   const secondPageWidth = screenwidth;
-
+  //其实这个组件的技巧就是 第二页其实已经铺满元素了 但是你不滑动的情况下第二页高度不够所以看不到 第二页的元素 
+  //但是你一滑动 第二页的高度就增加了 就能看到第二页的元素了
   return (
     <View style={[styles.container, containerStyle]}>
       <ScrollView
